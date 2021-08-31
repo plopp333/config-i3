@@ -162,6 +162,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # logout key binding
 bindsym $mod+l exec betterlockscreen -l & sleep 1 & xset dpms force off
+#bindsym $mod+l exec i3lock -c=000000ff -k --date-color=ffffffff --time-color=ffffffff --pass-media-keys & sleep 1 & xset dpms force off
 
 # Colors
 # class                 border  backgr. text    indicator child_border
