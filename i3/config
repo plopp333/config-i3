@@ -17,6 +17,9 @@ font HackMono Nerd Font:9
 for_window [class="^.*"] border pixel 3
 new_window 1pixel
 
+gaps outer 8
+gaps inner 4
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -159,6 +162,8 @@ bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id ~/.config/i3/xrandr.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id picom -CGbf
+exec_always --no-startup-id nitrogen --restore
 
 # logout key binding
 bindsym $mod+l exec betterlockscreen -l & sleep 1 & xset dpms force off
